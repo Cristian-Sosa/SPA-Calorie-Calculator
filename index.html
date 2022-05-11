@@ -28,67 +28,69 @@
                 </ul>
             </nav>
 
-            <header class="header">
-                <h1 class="caption">calorie <span class="sub_caption">Calculator</span></h1>
-            </header>
-
-            <form class="form" action="POST">
-                <fieldset class="form-left">
-                    <div class="inputs_container units">
-                        <h2>Units</h2>
-
-                        <input type="radio" name="units" id="meters"><label for="meters">Meters</label>
-                        <input type="radio" name="units" id="us-units"><label for="us-units">US units</label>
-                    </div>
-
-                    <div class="inputs_container gender">
-                        <h2>Gender</h2>
-
-                        <input type="radio" name="gender" id="female"><label for="female">Female</label>
-                        <input type="radio" name="gender" id="male"><label for="male">Male</label>
-                    </div>
-
-                    <div class="inputs_container age">
-                        <h2>Age</h2>
-
-                        <input type="text" name="age" id="age">
-                    </div>
-
-                    <div class="inputs_container activity">
-                        <h2>Activity</h2>
-
-                        <select name="activity" id="activity">
-                            <option value="light">Light</option>
-                            <option value="moderate">Moderate</option>
-                            <option value="Active">Active</option>
-                            <option value="very-active">Very active</option>
-                            <option value="extra-active">Extra active</option>
-                        </select>
-                    </div>
-                </fieldset>
-
-                <fieldset class="form-right">
-                    <div class="inputs_container heigth">
-                        <h2>Height</h2>
-
-                        <input type="text" name="height" id="height">
-                    </div>
-
-                    <div class="inputs_container currecnt_weight">
-                        <h2>Current weight</h2>
-
-                        <input type="text" name="currect_weight" id="currect_weight">
-                    </div>
-
-                    <div class="inputs_container weight_goal">
-                        <h2>Weight goal</h2>
-
-                        <input type="text" name="weight_goal" id="weight_goal">
-                    </div>
-
-                    <a class="btn-primary" id="form-btn" href="#"></a>
-                </fieldset>
-            </form>
+            <div class="container-form">
+                <header class="header">
+                    <h1 class="caption">calorie <span class="sub_caption">Calculator</span></h1>
+                </header>
+    
+                <form class="form" action="POST">
+                    <fieldset class="form-left">
+                        <div class="inputs_container units">
+                            <h2>Units</h2>
+    
+                            <input type="radio" name="units" id="meters"><label for="meters">Meters</label>
+                            <input type="radio" name="units" id="us-units"><label for="us-units">US units</label>
+                        </div>
+    
+                        <div class="inputs_container gender">
+                            <h2>Gender</h2>
+    
+                            <input type="radio" name="gender" id="female"><label for="female">Female</label>
+                            <input type="radio" name="gender" id="male"><label for="male">Male</label>
+                        </div>
+    
+                        <div class="inputs_container age">
+                            <h2>Age</h2>
+    
+                            <input type="text" name="age" id="age">
+                        </div>
+    
+                        <div class="inputs_container activity">
+                            <h2>Activity</h2>
+    
+                            <select name="activity" id="activity">
+                                <option value="light">Light</option>
+                                <option value="moderate">Moderate</option>
+                                <option value="Active">Active</option>
+                                <option value="very-active">Very active</option>
+                                <option value="extra-active">Extra active</option>
+                            </select>
+                        </div>
+                    </fieldset>
+    
+                    <fieldset class="form-right">
+                        <div class="inputs_container heigth">
+                            <h2>Height</h2>
+    
+                            <input type="text" name="height" id="height">
+                        </div>
+    
+                        <div class="inputs_container currecnt_weight">
+                            <h2>Current weight</h2>
+    
+                            <input type="text" name="currect_weight" id="currect_weight">
+                        </div>
+    
+                        <div class="inputs_container weight_goal">
+                            <h2>Weight goal</h2>
+    
+                            <input type="text" name="weight_goal" id="weight_goal">
+                        </div>
+    
+                        <a class="btn-primary" id="form-btn" href="#"></a>
+                    </fieldset>
+                </form>
+            </div>
 
             <aside class="aside">
                 <div class="aside_container">
@@ -109,11 +111,12 @@
                     <a class="btn_secondary" href="#">See diets</a>
                 </div>
             </aside>
+            
+            <div class="attribution">
+                <span>Developed by <a href="https://github.com/Cristian-Sosa">Cristian Sosa</a></span>
+            </div>
         </main>
 
-        <div class="attribution">
-            <span>Developed by <a href="https://github.com/Cristian-Sosa">Cristian Sosa</a></span>
-        </div>
     </div>
 
     <!-- Scripts Personales -->
