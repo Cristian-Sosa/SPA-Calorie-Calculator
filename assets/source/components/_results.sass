@@ -1,0 +1,47 @@
+%alinear-al-centro
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+
+aside.aside .aside_container .aside_container_header
+    @extend %alinear-al-centro
+
+    margin-bottom: 24px
+
+    p
+        font-size: 2em
+
+    div.result 
+        @extend %alinear-al-centro
+
+        color: $white
+
+        h3
+            font-size: 8em
+    
+        span
+            font-size: 2em
+
+aside.aside .aside_container .aside_container_body
+    @extend %alinear-al-centro
+
+    margin-bottom: 64px
+
+    h4
+        margin-bottom: 16px
+
+        font-size: 1.8em
+        font-weight: 300
+
+    ul.goals
+        list-style: none
+
+        @extend %alinear-al-centro
+
+        li
+            margin-bottom: 8px
+
+            font-size: 1.8em
+            font-weight: 300

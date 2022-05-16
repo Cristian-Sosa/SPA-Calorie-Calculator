@@ -1,1 +1,31 @@
-@import '../tokens/_variables'
+%general-btns
+    width: 200px
+
+    padding: 8px 0
+    
+    text-align: center
+    text-decoration: none
+
+    font-size: 1.6em
+
+    display: inline-block
+    
+
+    border-radius: 50px
+
+a.btn_primary
+    background-color: $tertiary
+
+    color: $white
+
+    @extend %general-btns
+
+a.btn_secondary
+    background-color: transparent
+
+    color: $secondary
+
+    border: 2px solid $secondary
+
+    @extend %general-btns
+    
