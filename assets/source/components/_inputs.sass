@@ -1,0 +1,69 @@
+%div-container
+    h2
+        font-size: 1.6em
+
+        color: #606060
+
+%select-input-container
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: flex-start
+
+    div
+        input[type='radio']
+            margin-right: 8px
+
+            accent-color: $secondary
+
+            
+
+        label
+            font-size: 1.2em
+            color: $gray
+
+.inputs_container
+    margin-bottom: 4em
+    @extend %div-container
+
+    .select-input-container
+        @extend %select-input-container
+
+    input[type='text']
+        width: 150px
+
+        padding: 8px    
+
+        background: transparent
+        
+        font-size: 1.2em
+
+        color: $gray
+
+        outline: none
+        border: none
+
+        border-bottom: 1px solid $gray
+
+        &:focus
+            color: $white
+
+    select[name='activity']
+        width: 150px
+        
+        padding: 8px
+
+        background: transparent
+
+        color: $gray
+
+        border: none
+        outline: none
+
+        border-bottom: 1px solid $gray
+
+        option
+            background: $primary
+            color: $gray
+
+                
