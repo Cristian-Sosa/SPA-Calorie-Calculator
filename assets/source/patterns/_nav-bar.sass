@@ -23,14 +23,20 @@ ul.nav_links
         margin: 0 16px
 
         border-bottom: 1px solid $white
+
+        transition: border-bottom .6s, easy-out
         
         a
-            font-size: 1.2em
+            font-size: 1.6em
             font-weight: 300
             
             text-decoration: none
 
             color: $white
+
+        &:hover
+            border-bottom: 1px solid $secondary      
+            
 
 figure.nav_logo img
     width: 2.4em

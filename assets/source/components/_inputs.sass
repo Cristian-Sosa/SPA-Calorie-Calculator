@@ -23,6 +23,7 @@
 
 .inputs_container
     margin-bottom: 4em
+
     @extend %div-container
 
     .select-input-container
@@ -44,8 +45,12 @@
 
         border-bottom: 1px solid $gray
 
+        transition: color .6s, border-bottom .6s, easy-out
+
         &:focus
             color: $white
+
+            border-bottom: 1px solid lighten($gray, 20)
 
     select[name='activity']
         width: 150px

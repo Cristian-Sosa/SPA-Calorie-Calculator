@@ -7,11 +7,13 @@
     text-decoration: none
 
     font-size: 1.6em
+    font-weight: 600
 
     display: inline-block
-    
 
     border-radius: 50px
+
+    transition: background-color .5s, easy-out
 
 a.btn_primary
     background-color: $tertiary
@@ -20,12 +22,25 @@ a.btn_primary
 
     @extend %general-btns
 
+    &:hover
+        background-color: lighten($tertiary, 10)
+    
+    &:active
+        background-color: darken($tertiary, 10)
+
 a.btn_secondary
     background-color: transparent
 
     color: $secondary
 
-    border: 2px solid $secondary
+    border: 1px solid $secondary
 
     @extend %general-btns
+
+    &:hover
+        color: $primary
+        background-color: lighten($secondary, 10)
+    
+    &:active
+        background-color: darken($secondary, 10)
     
